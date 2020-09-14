@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".fragments.ArtistDetailsFragment">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name_key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/artist_name"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/name_key"
+        app:layout_constraintTop_toTopOf="@+id/name_key" />
+
+    <TextView
+        android:id="@+id/listeners_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/listeners_name"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_key" />
+
+    <TextView
+        android:id="@+id/listners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/listeners_key"
+        app:layout_constraintTop_toTopOf="@+id/listeners_key" />
+    <TextView
+        android:id="@+id/url_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/url"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listeners_key" />
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/black"
+
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/url_key"
+        app:layout_constraintTop_toTopOf="@+id/url_key" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
